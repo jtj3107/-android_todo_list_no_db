@@ -18,31 +18,34 @@
             android:hint="할일을 입력해주세요." />
 
         <Button
-            android:onClick="btnAddTodoClicked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="btnAddTodoClicked"
             android:text="추가" />
     </LinearLayout>
 
     <ListView
+        android:id="@+id/main_activity__listViewTodo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="btnDeleteAllTodosClicked"
             android:text="전체삭제" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="btnFinishAppClicked"
             android:text="앱종료" />
 
     </LinearLayout>
